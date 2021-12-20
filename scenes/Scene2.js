@@ -17,6 +17,8 @@ class Scene2 extends Phaser.Scene {
             hideOnComplete: false
         });
 
+        this.character.play("character_walk");
+
         // this.add.text(20, 20, "Playing game", { 
         //     font: "25px Arial",
         //     fill: "yellow"
