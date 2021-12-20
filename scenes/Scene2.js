@@ -9,6 +9,8 @@ class Scene2 extends Phaser.Scene {
 
         this.character = this.add.sprite(config.width / 2, config.height / 2, "character");
 
+        this.character.scale.setTo(5, 5);
+        
         this.anims.create({
             key: "character_walk",
             frames: this.anims.generateFrameNumbers("character", { start: 0, end: 7 }),
