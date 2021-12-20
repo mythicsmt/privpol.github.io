@@ -11,10 +11,7 @@ class Scene2 extends Phaser.Scene {
 
         this.anims.create({
             key: "character_walk",
-            frames: [ { 
-                key: "character_walking", 
-                frames: [0, 1, 2, 3, 4, 5, 6, 7] 
-            }],
+            frames: this.anims.generateFrameNumbers({ start: 0, end: 7 }),
             frameRate: 10,
             repeat: -1,
             hideOnComplete: false
